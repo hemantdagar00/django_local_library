@@ -18,4 +18,10 @@ urlpatterns = [
     path('book/create/', views.BookCreate.as_view(), name='book-create'),
     path('book/<int:pk>/update/', views.BookUpdate.as_view(), name='book-update'),
     path('book/<int:pk>/delete/', views.BookDelete.as_view(), name='book-delete'),
+    path('genre/create/', views.GenreCreate.as_view(), name='genre-create'),
+    # path('genre/<int:pk>/update/', views.GenreUpdate.as_view(), name='genre-update'),
+    # path('genre/<int:pk>/delete/', views.GenreDelete.as_view(), name='genre-delete'),
+    path('language/create/', views.LanguageCreate.as_view(), name='language-create'),
+    # path('language/<int:pk>/update/', views.LanguageUpdate.as_view(), name='language-update'),
+    # path('language/<int:pk>/delete/', views.LanguageDelete.as_view(), name='language-delete'),
 ]

@@ -20,6 +20,14 @@
           <li><a href="{% url 'authors' %}">All authors</a></li>
         </ul>
 
+        <ul class="sidebar-nav">
+          <li><a href="{% url 'book-create' %}">Create Book</a></li>
+          <li><a href="{% url 'author-create' %}">Create Author</a></li>
+          <li><a href="{% url 'genre-create' %}">Create Genre</a></li>
+          <li><a href="{% url 'language-create' %}">Create Language</a></li>
+
+        </ul>
+
         <ul>
           {% if user.is_authenticated %}
             <li>User: {{ user.get_username }}</li>

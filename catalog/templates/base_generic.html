@@ -45,6 +45,7 @@
         <ul>
 
         <ul class="sidebar-nav">
+         {% if user.is_authenticated %}
           {% if perms.catalog.can_mark_returned %}
               <br>
             <li>Permission Status: Staff</li>
@@ -52,6 +53,7 @@
           {% else %}
             <li>Permission Status: Not a Staff Member</li>
           {% endif %}
+        {% endif %}
         </ul>
      {% endblock %}
 
